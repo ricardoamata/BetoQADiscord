@@ -2,7 +2,8 @@ import discord
 
 from chatbot import BetoQA
 
-TOKEN = 'OTE4MDU3NjgzMzA5OTU3MTIw.YbBt2A.WIq1_yR5yRUJChy9M1400eEfcFU'
+with open("token.txt", "r") as f:
+    TOKEN = f.read()
 
 client = discord.Client()
 chatbot = BetoQA()
